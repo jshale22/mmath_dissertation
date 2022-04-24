@@ -529,12 +529,12 @@ def particle_distribution(n_samples, number_of_steps, starting_point, initial_ti
     # Plotting histograms for standard and weighted process
     plt.subplot(1,2,1)
     plt.bar(time_intervals + interval_length/2, surviving_particles, edgecolor="black", color="red", width = interval_length)
-    plt.xlabel("Time")
+    plt.xlabel("Time (seconds)")
     plt.ylabel("Number of surviving particles")
     
     plt.subplot(1,2,2)
     plt.bar(time_intervals + interval_length/2, weighted_surviving_particles, edgecolor="black", color="blue", width = interval_length)
-    plt.xlabel("Time")
+    plt.xlabel("Time (seconds)")
     plt.ylabel("Number of surviving weighted particles")
     
     plt.tight_layout()
